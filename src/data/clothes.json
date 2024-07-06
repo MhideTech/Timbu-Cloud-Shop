@@ -4,7 +4,7 @@
       "name": "Nike Premium plain white",
       "price": 88000,
       "discountedPrice": 80000,
-      "img": "",
+      "img": "public/img/men/white-shirt.png",
       "size": "M",
       "category": "Men",
       "brand": "Nike"

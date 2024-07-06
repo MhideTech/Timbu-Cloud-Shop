@@ -61,7 +61,6 @@ function Category() {
             New Arrivals
           </h2>
           <a href="#" className="text-sm font-bold flex items-center gap-3">
-            {" "}
             See All <i className="fa-solid fa-chevron-right text-sm"></i>
           </a>
         </div>
@@ -94,7 +93,6 @@ function Category() {
             Top selling for Women
           </h2>
           <a href="#" className="text-sm font-bold flex items-center gap-3">
-            {" "}
             See All <i className="fa-solid fa-chevron-right text-sm"></i>
           </a>
         </div>
@@ -127,7 +125,6 @@ function Category() {
             Top selling for men
           </h2>
           <a href="#" className="text-sm font-bold flex items-center gap-3">
-            {" "}
             See All <i className="fa-solid fa-chevron-right text-sm"></i>
           </a>
         </div>
@@ -230,7 +227,7 @@ function Footer() {
             </p>
 
             <button className="w-full bg-custom-wheat my-4 text-custom-deep-browm border-custom-deep-browm border p-2 text-sm font-[450] rounded-[4px]">
-              Iamonowu@gmail.com <i class="fa-solid fa-envelope ps-4"></i>
+              Iamonowu@gmail.com <i className="fa-solid fa-envelope ps-4"></i>
             </button>
 
             <button className="w-full bg-custom-deep-browm p-2 rounded-[4px] text-custom-wheat">
