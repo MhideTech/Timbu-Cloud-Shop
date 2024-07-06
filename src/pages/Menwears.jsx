@@ -7,55 +7,228 @@ function Menwears() {
 
 function Mensection() {
   return (
-    <section>
+    <section className="w-11/12 m-auto">
       <div className="flex justify-between items-center">
         <div>
           <i className="fa-solid fa-left-long"></i>
         </div>
-        <section className="flex gap-8">
-          <div className="relative">
-            <div className="bg-custom-wheat w-44 p-3 text-center shadow font-normal cursor-pointer text-custom-deep-browm">
-              Sort by <i className="fa-solid fa-chevron-down ps-3"></i>
-            </div>
-            <ul className="w-48 bg-custom-wheat  flex-col items-center gap-2 p-3 font-medium absolute top-8 left-36 text-custom-deep-browm hidden">
-              <li className="hover:underline cursor-pointer">Popularity</li>
-              <li className="hover:underline cursor-pointer">New Arrivals</li>
-              <li className="hover:underline cursor-pointer">
-                Price Low to Hign
-              </li>
-              <li className="hover:underline cursor-pointer">Product Rating</li>
-            </ul>
-          </div>
-          <div className="relative">
+        <form className="flex gap-8">
+          <select
+            name="Sort by"
+            id="sort"
+            className="border-0 focus:rounded-none outline-none p-4 focus:p-4 w-44 bg-custom-wheat"
+          >
+            <option value="sort" className="text-sm">
+              Sort by
+            </option>
+            <option value="popularity" className="text-sm">
+              Popularity
+            </option>
+            <option value="New Arrival" className="text-sm">
+              New Arrival
+            </option>
+            <option value="Low to High" className="text-sm">
+              Low to High
+            </option>
+            <option value="High to Low" className="text-sm">
+              High to Low
+            </option>
+            <option value="Product Rating" className="text-sm">
+              Product Rating
+            </option>
+          </select>
+          <select
+            name="Brand"
+            id="brand"
+            className="border-0 focus:rounded-none outline-none p-4 focus:p-4 w-44 bg-custom-wheat"
+          >
+            <option value="brand" className="text-sm">
+              Brand
+            </option>
+            <option value="lacoste" className="text-sm">
+              Lacoste
+            </option>
+            <option value="adidas" className="text-sm">
+              Adidas
+            </option>
+            <option value="nike" className="text-sm">
+              Nike
+            </option>
+            <option value="gucci" className="text-sm">
+              Gucci
+            </option>
+            <option value="zara" className="text-sm">
+              Zara
+            </option>
+            <option value="reebok" className="text-sm">
+              Reebok
+            </option>
+          </select>
+          <select
+            name="Size"
+            id="size"
+            className="border-0 focus:rounded-none outline-none p-4 focus:p-4 w-44 bg-custom-wheat"
+          >
+            <option value="size" className="text-sm">
+              Size
+            </option>
+            <option value="small" className="text-sm">
+              Small (s)
+            </option>
+            <option value="medium" className="text-sm">
+              Medium (M)
+            </option>
+            <option value="large" className="text-sm">
+              Large (L)
+            </option>
+          </select>
+
+          {/* <div className="relative">
             <div className="bg-custom-wheat w-44 p-3 text-center shadow font-normal cursor-pointer text-custom-deep-browm">
               Brand <i className="fa-solid fa-chevron-down ps-3"></i>
             </div>
-            <ul className="w-48 bg-custom-wheat  flex-col items-center gap-2 p-3 font-medium absolute top-8 left-36 text-custom-deep-browm hidden">
-              <li className="hover:underline cursor-pointer">Nike</li>
-              <li className="hover:underline cursor-pointer">Addidas</li>
+            <ul className="w-48 bg-custom-wheat shadow-md flex-col p-2 items-center z-10 gap-2 font-medium absolute top-10 left-10 text-custom-deep-browm">
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Adidas</li>
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Nike</li>
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Gucci</li>
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Zara</li>
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Lacoste</li>
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Reebok</li>
             </ul>
           </div>
           <div className="relative">
             <div className="bg-custom-wheat w-44 p-3 text-center shadow font-normal cursor-pointer text-custom-deep-browm">
               Size <i className="fa-solid fa-chevron-down ps-3"></i>
             </div>
-            <ul className="w-48 bg-custom-wheat  flex-col items-center gap-2 p-3 font-medium absolute top-8 left-36 text-custom-deep-browm hidden">
-              <li className="hover:underline cursor-pointer">Popularity</li>
-              <li className="hover:underline cursor-pointer">New Arrivals</li>
+            <ul className="w-48 bg-custom-wheat shadow-md flex-col p-2 items-center z-10 gap-2 font-medium absolute top-10 left-10 text-custom-deep-browm">
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Small (S)</li>
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Medium (M)</li>
+              <li className="hover:bg-brown hover:text-white text-sm cursor-pointer py-2 px-3">Large (L)</li>
             </ul>
-          </div>
-        </section>
+          </div> */}
+        </form>
       </div>
 
-      <section className="bg-custom-wheat p-10 mt-14">
-        <h2 className="font-[900] text-2xl text-custom-deep-browm">
+      <section className="bg-custom-wheat p-3 sm:p-10 mt-14">
+        <h2 className="font-semibold text-2xl text-custom-deep-browm mb-8 sm:mb-11">
           Top Selling For Men
         </h2>
-        <div className=" grid grid-cols-4 gap-y-10 mt-20">
-          <div
-            className="max-w-[303px] bg-white rounded-md p-2"
-            aria-label="card"
-          >
+        <div className=" grid grid-cols-2 sm:grid-cols-4 sm:gap-y-10 sm:gap-x-4 gap-x-3 gap-y-5">
+          <div className="bg-white rounded-md p-2" aria-label="card">
+            <div className="border-custom-brown border rounded-lg p-4 flex justify-center">
+              <img
+                src="/public/img/men/black-shirt.png"
+                alt=""
+                className="h-full"
+              />
+            </div>
+            <h1 className="text-base font-medium text-custom-deep-browm mt-2">
+              Nike Premium plain white
+            </h1>
+            <div className="sm:flex items-end justify-between text-custom-deep-browm my-3">
+              <p className="font-semibold text-xl">₦80,000</p>
+              <p className="font-light line-through text-lg">₦88,000</p>
+            </div>
+            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
+              Add to cart
+            </button>
+          </div>
+          <div className="bg-white rounded-md p-2" aria-label="card">
+            <div className="border-custom-brown border rounded-lg p-4">
+              <img
+                src="/public/img/men/purple-shirt.png"
+                alt=""
+                className="h-full"
+              />
+            </div>
+            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
+              Nike Premium plain white
+            </p>
+            <div className="flex items-end justify-between text-custom-deep-browm my-3">
+              <p className="font-[900] text-xl">₦80,000</p>
+              <p className="font-normal line-through text-lg">₦88,000</p>
+            </div>
+            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
+              Add to cart
+            </button>
+          </div>
+          <div className="bg-white rounded-md p-2" aria-label="card">
+            <div className="border-custom-brown border rounded-lg p-4">
+              <img
+                src="/public/img/men/red-shirt.png"
+                alt=""
+                className="h-full"
+              />
+            </div>
+            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
+              Nike Premium plain white
+            </p>
+            <div className="flex items-end justify-between text-custom-deep-browm my-3">
+              <p className="font-[900] text-xl">₦80,000</p>
+              <p className="font-normal line-through text-lg">₦88,000</p>
+            </div>
+            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
+              Add to cart
+            </button>
+          </div>
+          <div className="bg-white rounded-md p-2" aria-label="card">
+            <div className="border-custom-brown border rounded-lg p-4">
+              <img
+                src="/public/img/men/black-shirt.png"
+                alt=""
+                className="h-full"
+              />
+            </div>
+            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
+              Nike Premium plain white
+            </p>
+            <div className="flex items-end justify-between text-custom-deep-browm my-3">
+              <p className="font-[900] text-xl">₦80,000</p>
+              <p className="font-normal line-through text-lg">₦88,000</p>
+            </div>
+            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
+              Add to cart
+            </button>
+          </div>
+          <div className="bg-white rounded-md p-2" aria-label="card">
+            <div className="border-custom-brown border rounded-lg p-4">
+              <img
+                src="/public/img/men/black-shirt.png"
+                alt=""
+                className="h-full"
+              />
+            </div>
+            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
+              Nike Premium plain white
+            </p>
+            <div className="flex items-end justify-between text-custom-deep-browm my-3">
+              <p className="font-[900] text-xl">₦80,000</p>
+              <p className="font-normal line-through text-lg">₦88,000</p>
+            </div>
+            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
+              Add to cart
+            </button>
+          </div>
+          <div className="bg-white rounded-md p-2" aria-label="card">
+            <div className="border-custom-brown border rounded-lg p-4">
+              <img
+                src="/public/img/men/black-shirt.png"
+                alt=""
+                className="h-full"
+              />
+            </div>
+            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
+              Nike Premium plain white
+            </p>
+            <div className="flex items-end justify-between text-custom-deep-browm my-3">
+              <p className="font-[900] text-xl">₦80,000</p>
+              <p className="font-normal line-through text-lg">₦88,000</p>
+            </div>
+            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
+              Add to cart
+            </button>
+          </div>
+          <div className="bg-white rounded-md p-2" aria-label="card">
             <div className="border-custom-brown border rounded-lg p-4">
               <img src="img/white-men.png" alt="" className="h-full" />
             </div>
@@ -70,118 +243,7 @@ function Mensection() {
               Add to cart
             </button>
           </div>
-          <div
-            className="max-w-[303px] bg-white rounded-md p-2"
-            aria-label="card"
-          >
-            <div className="border-custom-brown border rounded-lg p-4">
-              <img src="img/white-men.png" alt="" className="h-full" />
-            </div>
-            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
-              Nike Premium plain white
-            </p>
-            <div className="flex items-end justify-between text-custom-deep-browm my-3">
-              <p className="font-[900] text-xl">₦80,000</p>
-              <p className="font-normal line-through text-lg">₦88,000</p>
-            </div>
-            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
-              Add to cart
-            </button>
-          </div>
-          <div
-            className="max-w-[303px] bg-white rounded-md p-2"
-            aria-label="card"
-          >
-            <div className="border-custom-brown border rounded-lg p-4">
-              <img src="img/white-men.png" alt="" className="h-full" />
-            </div>
-            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
-              Nike Premium plain white
-            </p>
-            <div className="flex items-end justify-between text-custom-deep-browm my-3">
-              <p className="font-[900] text-xl">₦80,000</p>
-              <p className="font-normal line-through text-lg">₦88,000</p>
-            </div>
-            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
-              Add to cart
-            </button>
-          </div>
-          <div
-            className="max-w-[303px] bg-white rounded-md p-2"
-            aria-label="card"
-          >
-            <div className="border-custom-brown border rounded-lg p-4">
-              <img src="img/white-men.png" alt="" className="h-full" />
-            </div>
-            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
-              Nike Premium plain white
-            </p>
-            <div className="flex items-end justify-between text-custom-deep-browm my-3">
-              <p className="font-[900] text-xl">₦80,000</p>
-              <p className="font-normal line-through text-lg">₦88,000</p>
-            </div>
-            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
-              Add to cart
-            </button>
-          </div>
-          <div
-            className="max-w-[303px] bg-white rounded-md p-2"
-            aria-label="card"
-          >
-            <div className="border-custom-brown border rounded-lg p-4">
-              <img src="img/white-men.png" alt="" className="h-full" />
-            </div>
-            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
-              Nike Premium plain white
-            </p>
-            <div className="flex items-end justify-between text-custom-deep-browm my-3">
-              <p className="font-[900] text-xl">₦80,000</p>
-              <p className="font-normal line-through text-lg">₦88,000</p>
-            </div>
-            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
-              Add to cart
-            </button>
-          </div>
-          <div
-            className="max-w-[303px] bg-white rounded-md p-2"
-            aria-label="card"
-          >
-            <div className="border-custom-brown border rounded-lg p-4">
-              <img src="img/white-men.png" alt="" className="h-full" />
-            </div>
-            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
-              Nike Premium plain white
-            </p>
-            <div className="flex items-end justify-between text-custom-deep-browm my-3">
-              <p className="font-[900] text-xl">₦80,000</p>
-              <p className="font-normal line-through text-lg">₦88,000</p>
-            </div>
-            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
-              Add to cart
-            </button>
-          </div>
-          <div
-            className="max-w-[303px] bg-white rounded-md p-2"
-            aria-label="card"
-          >
-            <div className="border-custom-brown border rounded-lg p-4">
-              <img src="img/white-men.png" alt="" className="h-full" />
-            </div>
-            <p className="text-sm font-[450] text-custom-deep-browm mt-2">
-              Nike Premium plain white
-            </p>
-            <div className="flex items-end justify-between text-custom-deep-browm my-3">
-              <p className="font-[900] text-xl">₦80,000</p>
-              <p className="font-normal line-through text-lg">₦88,000</p>
-            </div>
-            <button className="w-full bg-custom-deep-browm p-2 font-normal text-white text-sm rounded-sm">
-              Add to cart
-            </button>
-          </div>
-          <div
-            className="max-w-[303px] bg-white rounded-md p-2"
-            aria-label="card"
-          >
+          <div className="bg-white rounded-md p-2" aria-label="card">
             <div className="border-custom-brown border rounded-lg p-4">
               <img src="img/white-men.png" alt="" className="h-full" />
             </div>
