@@ -122,6 +122,7 @@ function Mensection({ clothesData }) {
           {clothesData.map((cloth, i) => (
             <ClothCard key={i} cloth={cloth} />
           ))}
+
         </div>
       </section>
     </section>
