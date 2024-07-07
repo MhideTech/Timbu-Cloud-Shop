@@ -1,12 +1,18 @@
+/* eslint-disable react/prop-types */
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Category from "../components/Category";
 import FooterBanner from "../components/FooterBanner";
 import Header from "../components/Header";
+import Loader from "../components/Loader";
 
-function Homepage() {
+function Homepage({ isLoading }) {
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="mx-auto">
       <Navbar />
       <Header />
       <Category />

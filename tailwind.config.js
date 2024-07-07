@@ -19,6 +19,15 @@ export default {
       fontFamily: {
         textFont: ["Poppins", "sans-serif"],
       },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "scale(1.1)" },
+          "50%": { transform: "scale(.9)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

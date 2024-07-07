@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Category() {
   return (
-    <section className="mt-10">
+    <section className="w-11/12 mx-auto mt-10">
       <div className="relative">
         <div className="bg-custom-wheat w-44 p-3 text-center shadow font-normal cursor-pointer text-custom-deep-browm">
           Category <i className="fa-solid fa-chevron-down ps-3"></i>

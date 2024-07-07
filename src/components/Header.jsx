@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="h-[542px] bg-custom-gradient rounded-[10px] relative">
+    <header className="w-11/12 mx-auto h-[542px] bg-custom-gradient rounded-[10px] relative">
       <div className=" text-center pt-10 text-white">
         <h2 className="text-4xl font-normal">
           Elevate Your Wardrobe with Timeless Essentials

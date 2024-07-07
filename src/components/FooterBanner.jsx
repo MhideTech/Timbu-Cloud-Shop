@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function FooterBanner() {
   return (
     <section className="bg-[url('/public//img/footer-banner.png')] bg-no-repeat bg-cover h-[411px] rounded-lg flex justify-between my-20">
@@ -19,9 +21,12 @@ function FooterBanner() {
           <p className="text-white font-normal text-lg mt-2">
             Find your new favorite today.
           </p>
-          <button className="w-44 bg-white font-[900] text-sm py-2 mt-10 text-custom-brown rounded-sm">
+          <Link
+            to="/new-arrival"
+            className="w-44 bg-white font-[900] text-sm py-2 mt-10 text-custom-brown rounded-sm"
+          >
             Shop New Arrivals
-          </button>
+          </Link>
         </div>
       </div>
       <div className="w-[50%]">

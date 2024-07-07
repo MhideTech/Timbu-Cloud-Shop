@@ -8,6 +8,7 @@ function Navbar() {
           <img src="img/nav-logo.png" alt="" />
         </Link>
       </div>
+      
       <ul className="flex gap-16">
         <Link to="women">Women</Link>
         <Link to="men">Men</Link>
