@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Category() {
   return (
     <section className="mt-10">
@@ -19,9 +21,12 @@ function Category() {
           <h2 className="text-2xl font-extrabold text-custom-deep-browm">
             New Arrivals
           </h2>
-          <a href="#" className="text-sm font-bold flex items-center gap-3">
+          <Link
+            to="new-arrival"
+            className="text-sm font-bold flex items-center gap-3"
+          >
             See All <i className="fa-solid fa-chevron-right text-sm"></i>
-          </a>
+          </Link>
         </div>
         <div className="w-full mt-7 overflow-x-scroll flex">
           <div
@@ -51,9 +56,12 @@ function Category() {
           <h2 className="text-2xl font-extrabold text-custom-deep-browm">
             Top selling for Women
           </h2>
-          <a href="#" className="text-sm font-bold flex items-center gap-3">
+          <Link
+            to="women"
+            className="text-sm font-bold flex items-center gap-3"
+          >
             See All <i className="fa-solid fa-chevron-right text-sm"></i>
-          </a>
+          </Link>
         </div>
         <div className="w-full mt-7 overflow-x-scroll flex">
           <div
@@ -83,9 +91,12 @@ function Category() {
           <h2 className="text-2xl font-extrabold text-custom-deep-browm">
             Top selling for men
           </h2>
-          <a href="#" className="text-sm font-bold flex items-center gap-3">
+          <Link
+            to="men"
+            className="text-sm font-bold flex items-center gap-3"
+          >
             See All <i className="fa-solid fa-chevron-right text-sm"></i>
-          </a>
+          </Link>
         </div>
         <div className="w-full mt-7 overflow-x-scroll flex">
           <div
