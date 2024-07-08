@@ -4,7 +4,7 @@ function Cart() {
   </div>;
 }
 
-
+// for Checkout
 function Addeditem() {
   return (
     <section className="h-[600px] flex justify-between w-full">
@@ -68,6 +68,262 @@ function Addeditem() {
           alt="cart image"
           className="w-full h-full"
         />{" "}
+      </div>
+    </section>
+  );
+}
+
+//Cart
+function newCart(){
+  return (
+    <section className="h-fit mt-16 flex justify-between">
+      <div className="bg-custom-wheat p-10 w-[68%] rounded-lg">
+        <h3 className="font-[900] text-2xl text-custom-deep-browm">Cart</h3>
+
+        {/* Cart item will be here */}
+        <section className="flex flex-col gap-y-3">
+          {/* nike blue shirt here */}
+          <div className="flex pt-10 gap-x-7">
+            <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
+              <img
+                src="img/T-Shirt.png"
+                alt="T-Shirt"
+                className="h-full object-contain"
+              />
+            </div>
+
+            <div className="flex flex-col gap-y-8 w-full">
+              <div className="text-custom-deep-browm flex justify-between items-center w-full">
+                <h3 className="font-[450] text-2xl">
+                  Nike turquoise plain shirt
+                </h3>
+                <p className="font-[900]">₦80,000</p>
+              </div>
+
+              <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
+                <p>Manufacturer: Nike</p>
+                <p className="line-through">₦88,000</p>
+              </div>
+              <div className="flex justify-between">
+                <div className="flex gap-2">
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                </div>
+                <div className="flex gap-5">
+                  <button className="w-6 h-6 rounded-full bg-custom-deep-browm text-custom-wheat">
+                    +
+                  </button>
+                  <span>2</span>
+                  <button className="w-6 h-6 rounded-full bg-custom-deep-browm text-custom-wheat">
+                    -
+                  </button>
+                </div>
+              </div>
+
+              <div className="flex justify-between">
+                <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
+                  <img src="delete.svg" alt="delete icon" />
+                  Remove
+                </button>
+                <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm">
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* border */}
+          <hr className="border-b-1 border-custom-deep-browm my-5" />
+
+          {/* lacoste gold shirt */}
+          <div className="flex pt-4 gap-x-7">
+            <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
+              <img
+                src="img/yellow-shirt 1.png"
+                alt="lacoste shirt"
+                className="h-full object-contain"
+              />
+            </div>
+
+            <div className="flex flex-col gap-y-8 w-full">
+              <div className="text-custom-deep-browm flex justify-between items-center w-full">
+                <h3 className="font-[450] text-2xl">
+                  Lacoste gold yellow shirt
+                </h3>
+                <p className="font-[900]">₦35,000</p>
+              </div>
+
+              <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
+                <p>Manufacturer: Lacoste</p>
+                <p className="line-through">₦40,000</p>
+              </div>
+              <div className="flex justify-between">
+                <div className="flex gap-2">
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                </div>
+                <div className="flex gap-5">
+                  <button className="w-6 h-6 rounded-full bg-custom-deep-browm text-custom-wheat">
+                    +
+                  </button>
+                  <span>4</span>
+                  <button className="w-6 h-6 rounded-full bg-custom-deep-browm text-custom-wheat">
+                    -
+                  </button>
+                </div>
+              </div>
+
+              <div className="flex justify-between">
+                <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
+                  <img src="delete.svg" alt="delete icon" />
+                  Remove
+                </button>
+                <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm">
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* border */}
+          <hr className="border-b-1 border-custom-deep-browm my-5" />
+
+          {/* nike white shirt */}
+          <div className="flex pt-4 gap-x-7">
+            <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
+              <img
+                src="img/white-men.png"
+                alt="lacoste shirt"
+                className="h-full object-contain"
+              />
+            </div>
+
+            <div className="flex flex-col gap-y-8 w-full">
+              <div className="text-custom-deep-browm flex justify-between items-center w-full">
+                <h3 className="font-[450] text-2xl">
+                  Nike turquoise plain shirt
+                </h3>
+                <p className="font-[900]">₦58,000</p>
+              </div>
+
+              <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
+                <p>Manufacturer: Nike</p>
+                <p className="line-through">₦68,000</p>
+              </div>
+              <div className="flex justify-between">
+                <div className="flex gap-2">
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                </div>
+                <div className="flex gap-5">
+                  <button className="w-6 h-6 rounded-full bg-custom-deep-browm text-custom-wheat">
+                    +
+                  </button>
+                  <span>1</span>
+                  <button className="w-6 h-6 rounded-full bg-custom-deep-browm text-custom-wheat">
+                    -
+                  </button>
+                </div>
+              </div>
+
+              <div className="flex justify-between">
+                <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
+                  <img src="delete.svg" alt="delete icon" />
+                  Remove
+                </button>
+                <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm">
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* border */}
+          <hr className="border-b-1 border-custom-deep-browm my-5" />
+
+          <div className="flex pt-4 gap-x-7">
+            <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
+              <img
+                src="img/white-men.png"
+                alt="lacoste shirt"
+                className="h-full object-contain"
+              />
+            </div>
+
+            <div className="flex flex-col gap-y-8 w-full">
+              <div className="text-custom-deep-browm flex justify-between items-center w-full">
+                <h3 className="font-[450] text-2xl">
+                  Nike turquoise plain shirt
+                </h3>
+                <p className="font-[900]">₦58,000</p>
+              </div>
+
+              <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
+                <p>Manufacturer: Nike</p>
+                <p className="line-through">₦68,000</p>
+              </div>
+              <div className="flex justify-between">
+                <div className="flex gap-2">
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                  <i className="fa-solid fa-star text-custom-brown"></i>
+                </div>
+                <div className="flex gap-5">
+                  <button className="w-6 h-6 rounded-full bg-custom-deep-browm text-custom-wheat">
+                    +
+                  </button>
+                  <span>1</span>
+                  <button className="w-6 h-6 rounded-full bg-custom-deep-browm text-custom-wheat">
+                    -
+                  </button>
+                </div>
+              </div>
+
+              <div className="flex justify-between">
+                <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
+                  <img src="delete.svg" alt="delete icon" />
+                  Remove
+                </button>
+                <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm">
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <Link
+            to="/checkout"
+            className="bg-custom-deep-browm py-3 rounded-md text-center"
+          >
+            <button className="font-[450] text-xl text-custom-wheat">
+              Checkout (<span className="font-[700]">₦</span>288,000)
+            </button>
+          </Link>
+        </section>
+      </div>
+
+      <div className="w-[30%] flex flex-col gap-y-4 h-fit">
+        <img
+          src="img/cart-lmage.png"
+          alt="cart image"
+          className="w-full object-contain"
+        />
+        <img
+          src="img/cartimg-2.png"
+          alt="cart image"
+          className="w-full object-contain"
+        />
       </div>
     </section>
   );
