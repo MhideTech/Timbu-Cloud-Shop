@@ -36,7 +36,7 @@ function Footer() {
           </li>
         </ul>
         <form className="md:block hidden">
-          <h4 className="font-bold text-custom-deep-browm text-sm uppercase mb-3">
+          <h4 className="font-bold text-custom-deep-browm text- uppercase mb-3">
             new to timbu
           </h4>
           <p className="text-sm text-custom-deep-browm font-normal">
@@ -52,7 +52,7 @@ function Footer() {
             <i className="fa-solid fa-envelope absolute right-5 top-1/2 transform -translate-y-1/2 text-custom-deep-browm"></i>
           </div>
 
-          <button className="w-full bg-custom-deep-browm p-2 rounded-[4px] text-custom-wheat">
+          <button className="w-full bg-custom-deep-browm p-2 rounded-[4px] text-custom-xl">
             Submit
           </button>
         </form>

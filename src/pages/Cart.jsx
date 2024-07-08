@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import TrustedSeller from "../components/TrustedSeller";
@@ -8,7 +7,7 @@ function Cart() {
   return (
     <div>
       <Navbar />
-      <NewCart />
+      <CartItem />
       <TrustedSeller />
       <FooterBanner />
       <Footer />
@@ -16,81 +15,12 @@ function Cart() {
   );
 }
 
-// for Checkout
-function Addeditem() {
-  return (
-    <section className="w-11/12 mx-auto h-fit flex flex-wrap justify-between">
-      <div className="sm:w-[70%] bg-custom-wheat h-full rounded-xl sm:p-12 py-12 px-6">
-        <div className="flex flex-wrap justify-between">
-          <div className="sm:w-[35%] mx-auto w-auto flex justify-center items-center bg-white border-custom-brown border-2 rounded-xl p-2">
-            <img src="img/men/yellow-shirt.png" alt="" />
-          </div>
-           <div className="sm:w-[62%] mt-8 sm:mt-0">
-            <h4 className="font-bold text-3xl text-custom-deep-browm">
-              Lacoste gold yellow shirt
-            </h4>
-            <div className="flex justify-between items-center mt-2">
-              <p className="font-[450] text-sm text-custom-deep-browm">
-                Available in <span className="font-[900]">M L XL</span>
-              </p>
-              <div className="flex gap-2">
-                <i className="fa-solid fa-star text-custom-brown"></i>
-                <i className="fa-solid fa-star text-custom-brown"></i>
-                <i className="fa-solid fa-star text-custom-brown"></i>
-                <i className="fa-solid fa-star text-custom-brown"></i>
-                <i className="fa-solid fa-star text-custom-brown"></i>
-              </div>
-            </div>
-
-            <div className="flex justify-between items-center my-5">
-              <h2 className="font-bold text-xl sm:text-4xl text-custom-deep-browm">
-                ₦35,000
-              </h2>
-              <p className="text-xl line-through text-custom-deep-browm">
-                ₦40,000
-              </p>
-            </div>
-            <p className="text-md text-custom-deep-browm">In stock</p>
-            <p className="text-md text-custom-deep-browm">
-              + shipping from ₦250 to ISOLO
-            </p>
-            <button className="w-full bg-custom-deep-browm p-4 font-[450] text-custom-wheat text-xl rounded-md my-4">
-              Buy now
-            </button>
-            <button className="w-full p-4 font-[450] text-custom-deep-browm border border-custom-deep-browm text-xl rounded-md">
-              Add to cart
-            </button>
-          </div>
-        </div>
-
-        <div className="bg-white w-full mt-7 p-6">
-          <p className="font-[450] text-sm text-custom-deep-browm">
-            Elevate your wardrobe with our Premium Lacoste Gold Yellow Round
-            Neck Shirt. Crafted from the finest materials, it offers
-            unparalleled comfort and a sleek, modern fit. Perfect for any
-            occasion, this shirt blends timeless style with contemporary flair,
-            ensuring you look and feel your best all day long. Available in a
-            variety of sophisticated colors to suit every preference.
-          </p>
-        </div>
-      </div>
-      <div className="w-[28%] hidden sm:block">
-        <img
-          src="img/cart-image.png"
-          alt="cart image"
-          className="w-full h-full"
-        />
-      </div>
-    </section>
-  );
-}
-
 //Cart
-function Cartitem() {
+function CartItem() {
   return (
     <section className="h-fit mt-10 md:mt-16 flex justify-between">
       <div className="bg-custom-wheat p-3 lg:p-10 lg:w-[68%] rounded-lg w-full">
-        <h3 className="font-[900] text-2xl text-custom-deep-browm">Cart</h3>
+        <h3 className="font-bold text-3xl text-custom-deep-browm">Cart</h3>
 
         <section className="flex flex-col gap-y-3">
           {/* nike blue shirt here */}
@@ -108,7 +38,7 @@ function Cartitem() {
                 <h3 className="font-[450] lg:text-2xl text-sm">
                   Nike blue plain shirt
                 </h3>
-                <p className="font-[900] text-xl lg:block hidden">₦80,000</p>
+                <p className="font-bold text-xl lg:block hidden">₦80,000</p>
               </div>
 
               <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
@@ -154,13 +84,13 @@ function Cartitem() {
               {/* Mobile */}
               <div className="text-[10px] font-[450] text-custom-deep-browm lg:hidden">
                 <p>in stock</p>
-                <p>+ shipping from ₦ 250 to ISOLO</p>
+                <p>+ shipping from ₦ 250 to ISOLO</p>
               </div>
               {/*End of Mobile */}
 
               <div className="flex justify-between">
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4 text-[14px]">
-                  <img src="delete.svg" alt="delete icon" className="w-3" />
+                  <img src="img/delete.png" alt="delete icon" className="w-3" />
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm text-[14px]">
@@ -176,7 +106,7 @@ function Cartitem() {
           <div className="flex pt-6 lg:pt-10 lg:gap-x-7 gap-x-5">
             <div className="bg-white border border-custom-deep-browm rounded-xl h-[145px] md:h-full lg:w-[250px]">
               <img
-                src="img/black-shirt.png"
+                src="img/men/black-shirt.png"
                 alt="T-Shirt"
                 className="h-full object-contain"
               />
@@ -187,7 +117,7 @@ function Cartitem() {
                 <h3 className="font-[450] lg:text-2xl text-sm">
                   Lacoste black plain shirt
                 </h3>
-                <p className="font-[900] text-xl lg:block hidden">₦58,000</p>
+                <p className="font-bold text-xl lg:block hidden">₦58,000</p>
               </div>
 
               <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
@@ -233,13 +163,13 @@ function Cartitem() {
               {/* Mobile */}
               <div className="text-[10px] font-[450] text-custom-deep-browm lg:hidden">
                 <p>in stock</p>
-                <p>+ shipping from ₦ 250 to ISOLO</p>
+                <p>+ shipping from ₦ 250 to ISOLO</p>
               </div>
               {/*End of Mobile */}
 
               <div className="flex justify-between">
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4 text-[14px]">
-                  <img src="delete.svg" alt="delete icon" className="w-3" />
+                  <img src="img/delete.png" alt="delete icon" className="w-3" />
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm text-[14px]">
@@ -256,7 +186,7 @@ function Cartitem() {
           <div className="flex pt-6 lg:pt-10 lg:gap-x-7 gap-x-5">
             <div className="bg-white border border-custom-deep-browm rounded-xl h-[145px] md:h-full lg:w-[250px]">
               <img
-                src="img/white-men.png"
+                src="img/men/white-shirt.png"
                 alt="white-shirt"
                 className="h-full object-contain"
               />
@@ -267,7 +197,7 @@ function Cartitem() {
                 <h3 className="font-[450] lg:text-2xl text-sm">
                   Nike white plain shirt
                 </h3>
-                <p className="font-[900] text-xl lg:block hidden">₦78,000</p>
+                <p className="font-bold text-xl lg:block hidden">₦78,000</p>
               </div>
 
               <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
@@ -313,13 +243,13 @@ function Cartitem() {
               {/* Mobile */}
               <div className="text-[10px] font-[450] text-custom-deep-browm lg:hidden">
                 <p>in stock</p>
-                <p>+ shipping from ₦ 250 to ISOLO</p>
+                <p>+ shipping from ₦ 250 to ISOLO</p>
               </div>
               {/*End of Mobile */}
 
               <div className="flex justify-between">
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4 text-[14px]">
-                  <img src="delete.svg" alt="delete icon" className="w-3" />
+                  <img src="img/delete.png" alt="delete icon" className="w-3" />
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm text-[14px]">
@@ -335,9 +265,9 @@ function Cartitem() {
           <div className="lg:flex pt-4 gap-x-7 hidden">
             <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
               <img
-                src="img/black-shirt.png"
+                src="img/women/black-shirt.png"
                 alt="nike shirt"
-                className="h-full object-contain"
+                className="object-contain"
               />
             </div>
 
@@ -346,7 +276,7 @@ function Cartitem() {
                 <h3 className="font-[450] text-2xl">
                   Reebok black plain shirt
                 </h3>
-                <p className="font-[900] text-xl">₦48,000</p>
+                <p className="font-bold text-xl">₦48,000</p>
               </div>
 
               <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">

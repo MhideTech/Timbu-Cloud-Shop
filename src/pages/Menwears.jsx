@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ClothCard from "../components/ClothCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -5,7 +6,6 @@ import FilterIconsContainer from "../components/FilterIconsContainer";
 import FooterBanner from "../components/FooterBanner";
 import TrustedSeller from "../components/TrustedSeller";
 
-/* eslint-disable react/prop-types */
 function Menwears({ clothesData }) {
   return (
     <div>

@@ -8,7 +8,7 @@ function Navbar() {
     setIsOpen(!isOpen);
   }
   return (
-    <nav className="w-11/12 sticky top-0 bg-custom-white z-20 mx-auto flex justify-between items-center h-20 mb-9">
+    <nav className="sm:w-11/12 sticky top-0 bg-custom-white z-20 mx-auto flex justify-between px-3 sm:px-0 items-center h-20 mb-9">
       <div className="flex items-center gap-5">
         <i
           className="fa-solid fa-bars text-xl block md:hidden text-custom-brown"
