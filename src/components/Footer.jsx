@@ -52,7 +52,7 @@ function Footer() {
             <i className="fa-solid fa-envelope absolute right-5 top-1/2 transform -translate-y-1/2 text-custom-deep-browm"></i>
           </div>
 
-          <button className="w-full bg-custom-deep-browm p-2 rounded-[4px] text-custom-xl">
+          <button className="w-full bg-custom-deep-browm p-2 rounded-[4px] text-custom-wheat text-custom-xl">
             Submit
           </button>
         </form>
@@ -64,7 +64,7 @@ function Footer() {
               All rights reserved Timbu Cloud shop
             </p>
           </div>
-          <div className="flex md:flex-row flex-col gap-y-8 md:gap-0 justify-between mt-8 font-[450] text-[6px] md:text-sm">
+          <div className="flex md:flex-row flex-col gap-y-8 md:gap-5 justify-between mt-8 font-[450] text-[6px] md:text-sm">
             <p>
               Designed by @Olawale | Developed by{" "}
               <Link to="https://hng11.slack.com/team/U07A0HSLGNA">
@@ -82,7 +82,7 @@ function Footer() {
             Subscribe to our newsletter to get updates on our latest offers!
           </p>
 
-          <button className="w-full bg-custom-deep-browm p-2 rounded-[4px] text-custom-wheat text-[8px]">
+          <button className="w-full bg-custom-deep-browm text-custom-wheat p-2 rounded-[4px] text-[8px]">
             Submit
           </button>
         </form>

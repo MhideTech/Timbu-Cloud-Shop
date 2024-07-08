@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="w-11/12 mx-auto md:h-[542px]  bg-[url('/img/Hero.png')] bg-no-repeat bg-cover  rounded-[10px] flex flex-col justify-between items-center relative">
+    <header className="w-11/12 mx-auto h-[320px] md:h-[542px]  bg-[url('/img/Hero.png')] bg-no-repeat bg-cover  rounded-[10px] flex flex-col justify-between items-center relative">
       <div className=" text-center md:pt-10 text-white">
         <h2 className="text-xl sm:text-[16px] font-[450] lg:text-4xl md:text-2xl md:pt-6 pt-6 sm:w-[70%] mx-auto">
           Elevate Your Wardrobe with{" "}
