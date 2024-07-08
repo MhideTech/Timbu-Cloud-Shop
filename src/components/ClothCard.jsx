@@ -3,8 +3,8 @@
 function ClothCard({ cloth }) {
 
   return (
-    <div className="bg-white rounded-md p-3" aria-label="card">
-      <div className="border-custom-brown border h-40 sm:h-60 rounded-lg p-4 flex justify-center items-center">
+    <div className="bg-white rounded-md p-3 w-[85%] sm:w-auto mx-auto" aria-label="card">
+      <div className="border-custom-brown border h-60 sm:h-60 rounded-lg p-4 flex justify-center items-center">
         <img src={cloth.img} alt="" className="h-fit" />
       </div>
       <h1 className="text-base font-medium text-custom-deep-browm mt-2">
