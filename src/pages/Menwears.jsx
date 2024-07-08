@@ -25,7 +25,9 @@ function Mensection({ clothesData }) {
     <div className="mx-auto">
       <Navbar />
       <section className="w-11/12 m-auto">
-        <div className="sm:flex sm:justify-between sm:items-center">
+
+
+           <div className="sm:flex sm:justify-between sm:items-center">
           <div className="mb-3">
             <Link to="/">
               <i className="fa-solid fa-arrow-left-long text-lg"></i>
@@ -132,7 +134,7 @@ function Mensection({ clothesData }) {
             </ul>
           </div> */}
           </form>
-        </div>
+           </div>
 
         <section className="bg-custom-wheat py-7 px-4 sm:p-10 mt-14">
           <h2 className="font-semibold text-2xl text-custom-deep-browm mb-8 sm:mb-11">
@@ -149,4 +151,130 @@ function Mensection({ clothesData }) {
     </div>
   );
 }
+
+
+
+//the whole filter stuff dey here
+function Filteritem() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [brandOpen, setBrandOpen] = useState(false);
+  const [sizeOpen, setSizeOpen] = useState(false);
+
+  function toggleSortBy() {
+    setIsOpen(!isOpen);
+    setBrandOpen(false);
+    setSizeOpen(false);
+  }
+
+  function toggleBrand() {
+    setBrandOpen(!brandOpen);
+    setIsOpen(false);
+    setSizeOpen(false);
+  }
+  function toggleSize() {
+    setSizeOpen(!sizeOpen);
+    setIsOpen(false);
+    setBrandOpen(false);
+  }
+  return (
+    <div className="flex md:justify-between justify-end items-center">
+      <div className="md:block hidden">
+        <Link to="/">
+          <img src="Back.svg" alt="back" />
+        </Link>
+      </div>
+      <section className="flex md:gap-12 gap-6">
+        <div className="relative">
+          <div
+            className="bg-custom-wheat py-3 px-2 flex items-center gap-x-4 text-center text-[10px] md:text-sm shadow font-normal cursor-pointer text-custom-deep-browm"
+            onClick={toggleSortBy}
+          >
+            Sort By: Popularity <i className="fa-solid fa-chevron-down"></i>
+          </div>
+          {isOpen && (
+            <ul className="md:w-[173px] w-32 bg-custom-wheat flex flex-col items-center gap-y-5 p-3 font-medium absolute md:top-full left-12 text-custom-deep-browm text-[10px] md:text-[14px] shadow-md">
+              <li className="hover:underline cursor-pointer">Popularity</li>
+              <li className="hover:underline cursor-pointer">New Arrival</li>
+              <li className="hover:underline cursor-pointer">
+                Price: Low to High
+              </li>
+              <li className="hover:underline cursor-pointer">
+                Price: High to Low
+              </li>
+              <li className="hover:underline cursor-pointer">Product Rating</li>
+            </ul>
+          )}
+        </div>
+
+        <div className="relative">
+          <div
+            className="bg-custom-wheat py-3 px-2 flex items-center gap-x-4 text-[10px] md:text-sm text-center shadow font-normal cursor-pointer text-custom-deep-browm"
+            onClick={toggleBrand}
+          >
+            Brand <i className="fa-solid fa-chevron-down"></i>
+          </div>
+          {brandOpen && (
+            <ul className="md:w-[173px] w-32 bg-custom-wheat flex flex-col items-center gap-y-5 p-3 font-medium absolute md:top-full right-0 text-custom-deep-browm text-[10px] md:text-[14px] shadow-md">
+              <li className="hover:underline cursor-pointer">Nike</li>
+              <li className="hover:underline cursor-pointer">Adidas</li>
+              <li className="hover:underline cursor-pointer">Reebok</li>
+              <li className="hover:underline cursor-pointer">Zara</li>
+              <li className="hover:underline cursor-pointer">Gucci</li>
+              <li className="hover:underline cursor-pointer">Lacoste</li>
+            </ul>
+          )}
+        </div>
+
+        <div className="relative">
+          <div
+            className="bg-custom-wheat py-3 px-2 flex items-center gap-x-4 text-[10px] md:text-sm text-center shadow font-normal cursor-pointer text-custom-deep-browm"
+            onClick={toggleSize}
+          >
+            Size <i className="fa-solid fa-chevron-down"></i>
+          </div>
+          {sizeOpen && (
+            <ul className="md:w-[173px] w-32 bg-custom-wheat flex flex-col items-center gap-y-5 p-3 font-medium absolute md:top-full right-0 text-custom-deep-browm text-[10px] md:text-[14px] shadow-md">
+              <li className="hover:underline cursor-pointer">Small</li>
+              <li className="hover:underline cursor-pointer">Medium</li>
+              <li className="hover:underline cursor-pointer">Large</li>
+              <li className="hover:underline cursor-pointer">XLarge</li>
+              <li className="hover:underline cursor-pointer">XXLarge</li>
+            </ul>
+          )}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+
+
+// the whole logo component dey here
+function Logo() {
+  return (
+    <section className="mt-5 md:px-24 py-6 bg-custom-white rounded-lg">
+      <div className="flex justify-center items-center gap-7">
+        <p className="text-[7px] font-[450] md:text-xl">
+          All time trusted seller
+        </p>
+        <div className="flex gap-2 text-[10px] md:text-xl">
+          <i className="fa-solid fa-star text-custom-brown"></i>
+          <i className="fa-solid fa-star text-custom-brown"></i>
+          <i className="fa-solid fa-star text-custom-brown"></i>
+          <i className="fa-solid fa-star text-custom-brown"></i>
+          <i className="fa-solid fa-star text-custom-brown"></i>
+        </div>
+      </div>
+      <div className="flex justify-between items-center pt-8 w-full">
+        <img src="img/Nike.png" alt="nike logo" className="md:w-16 w-6" />
+        <img src="img/Adidas.png" alt="adidas logo" className="md:w-16 w-6" />
+        <img src="img/Reebok.png" alt="reebok logo" className="md:w-16 w-6" />
+        <img src="img/Zara.png" alt="zara logo" className="md:w-16 w-6" />
+        <img src="img/Gucci.png" alt="gucci logo" className="md:w-16 w-6" />
+        <img src="img/Lacoste.png" alt="lacoste logo" className="md:w-16 w-6" />
+      </div>
+    </section>
+  );
+}
+
 export default Menwears;
