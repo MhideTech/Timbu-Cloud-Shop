@@ -86,29 +86,16 @@ function Addeditem() {
 }
 
 //Cart
-<<<<<<< HEAD
-function NewCart() {
-  return (
-    <section className="w-11/12 mx-auto h-fit mt-16 flex justify-between">
-      <div className="bg-custom-wheat p-10 w-[68%] rounded-lg">
-        <h3 className="font-bold text-4xl text-custom-deep-browm">Cart</h3>
-=======
 function Cartitem() {
   return (
     <section className="h-fit mt-10 md:mt-16 flex justify-between">
       <div className="bg-custom-wheat p-3 lg:p-10 lg:w-[68%] rounded-lg w-full">
         <h3 className="font-[900] text-2xl text-custom-deep-browm">Cart</h3>
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
 
         <section className="flex flex-col gap-y-3">
-<<<<<<< HEAD
-          <div className="flex pt-10 gap-x-7">
-            <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
-=======
           {/* nike blue shirt here */}
           <div className="flex pt-6 lg:pt-10 lg:gap-x-7 gap-x-5">
             <div className="bg-white border border-custom-deep-browm rounded-xl h-[145px] md:h-full lg:w-[250px]">
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
               <img
                 src="img/women/turquoise-shirt.png"
                 alt="T-Shirt"
@@ -121,11 +108,7 @@ function Cartitem() {
                 <h3 className="font-[450] lg:text-2xl text-sm">
                   Nike blue plain shirt
                 </h3>
-<<<<<<< HEAD
-                <p className="font-bold">₦80,000</p>
-=======
                 <p className="font-[900] text-xl lg:block hidden">₦80,000</p>
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
               </div>
 
               <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
@@ -176,13 +159,8 @@ function Cartitem() {
               {/*End of Mobile */}
 
               <div className="flex justify-between">
-<<<<<<< HEAD
-                <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
-                  <img src="img/delete.png" alt="delete icon" />
-=======
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4 text-[14px]">
                   <img src="delete.svg" alt="delete icon" className="w-3" />
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm text-[14px]">
@@ -198,13 +176,8 @@ function Cartitem() {
           <div className="flex pt-6 lg:pt-10 lg:gap-x-7 gap-x-5">
             <div className="bg-white border border-custom-deep-browm rounded-xl h-[145px] md:h-full lg:w-[250px]">
               <img
-<<<<<<< HEAD
-                src="img/men/yellow-shirt.png"
-                alt="lacoste shirt"
-=======
                 src="img/black-shirt.png"
                 alt="T-Shirt"
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
                 className="h-full object-contain"
               />
             </div>
@@ -265,13 +238,8 @@ function Cartitem() {
               {/*End of Mobile */}
 
               <div className="flex justify-between">
-<<<<<<< HEAD
-                <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
-                  <img src="img/delete.png" alt="delete icon" />
-=======
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4 text-[14px]">
                   <img src="delete.svg" alt="delete icon" className="w-3" />
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm text-[14px]">
@@ -288,28 +256,18 @@ function Cartitem() {
           <div className="flex pt-6 lg:pt-10 lg:gap-x-7 gap-x-5">
             <div className="bg-white border border-custom-deep-browm rounded-xl h-[145px] md:h-full lg:w-[250px]">
               <img
-<<<<<<< HEAD
-                src="img/men/white-shirt.png"
-                alt="lacoste shirt"
-=======
                 src="img/white-men.png"
                 alt="white-shirt"
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
                 className="h-full object-contain"
               />
             </div>
 
             <div className="flex flex-col gap-y-5 lg:gap-y-8 w-full">
               <div className="text-custom-deep-browm flex justify-between items-center w-full">
-<<<<<<< HEAD
-                <h3 className="font-[450] text-2xl">Nike white plain shirt</h3>
-                <p className="font-[900]">₦58,000</p>
-=======
                 <h3 className="font-[450] lg:text-2xl text-sm">
                   Nike white plain shirt
                 </h3>
                 <p className="font-[900] text-xl lg:block hidden">₦78,000</p>
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
               </div>
 
               <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
@@ -360,13 +318,8 @@ function Cartitem() {
               {/*End of Mobile */}
 
               <div className="flex justify-between">
-<<<<<<< HEAD
-                <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
-                  <img src="img/delete.png" alt="delete icon" />
-=======
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4 text-[14px]">
                   <img src="delete.svg" alt="delete icon" className="w-3" />
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm text-[14px]">
@@ -382,28 +335,18 @@ function Cartitem() {
           <div className="lg:flex pt-4 gap-x-7 hidden">
             <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
               <img
-<<<<<<< HEAD
-                src="img/women/red-shirt.png"
-                alt="lacoste shirt"
-=======
                 src="img/black-shirt.png"
                 alt="nike shirt"
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
                 className="h-full object-contain"
               />
             </div>
 
             <div className="lg:flex flex-col gap-y-8 w-full hidden">
               <div className="text-custom-deep-browm flex justify-between items-center w-full">
-<<<<<<< HEAD
-                <h3 className="font-[450] text-2xl">Lacoste hot red shirt</h3>
-                <p className="font-[900]">₦58,000</p>
-=======
                 <h3 className="font-[450] text-2xl">
                   Reebok black plain shirt
                 </h3>
                 <p className="font-[900] text-xl">₦48,000</p>
->>>>>>> aa8824c67b4a42c305142766374b2e621f6b1f1b
               </div>
 
               <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
