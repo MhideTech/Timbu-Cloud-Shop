@@ -18,13 +18,13 @@ function Cart() {
 //Cart
 function CartItem() {
   return (
-    <section className="h-fit mt-10 md:mt-16 flex justify-between">
+    <section className="w-11/12 mx-auto h-fit mt-10 md:mt-16 flex justify-between">
       <div className="bg-custom-wheat p-3 lg:p-10 lg:w-[68%] rounded-lg w-full">
         <h3 className="font-bold text-3xl text-custom-deep-browm">Cart</h3>
 
         <section className="flex flex-col gap-y-3">
           {/* nike blue shirt here */}
-          <div className="flex pt-6 lg:pt-10 lg:gap-x-7 gap-x-5">
+          <div className="flex pt-6 lg:pt-7 lg:gap-x-7 gap-x-5">
             <div className="bg-white border border-custom-deep-browm rounded-xl h-[145px] md:h-full lg:w-[250px]">
               <img
                 src="img/women/turquoise-shirt.png"
@@ -62,7 +62,7 @@ function CartItem() {
                 </div>
                 {/* Mobile */}
                 <div className="lg:hidden">
-                  <p className="text-[17px] font-[900] text-custom-deep-browm ">
+                  <p className="text-[17px] font-bold text-custom-deep-browm ">
                     ₦80,000
                   </p>
                   <p className="text-[12px] font-[450] text-custom-deep-browm">
@@ -103,7 +103,7 @@ function CartItem() {
           <hr className="border-b-1 border-custom-deep-browm my-5" />
 
           {/* lacoste gold shirt */}
-          <div className="flex pt-6 lg:pt-10 lg:gap-x-7 gap-x-5">
+          <div className="flex pt-6 lg:pt-1 lg:gap-x-7 gap-x-5">
             <div className="bg-white border border-custom-deep-browm rounded-xl h-[145px] md:h-full lg:w-[250px]">
               <img
                 src="img/men/black-shirt.png"
@@ -141,7 +141,7 @@ function CartItem() {
                 </div>
                 {/* Mobile */}
                 <div className="lg:hidden">
-                  <p className="text-[17px] font-[900] text-custom-deep-browm ">
+                  <p className="text-[17px] font-bold text-custom-deep-browm ">
                     ₦58,000
                   </p>
                   <p className="text-[12px] font-[450] text-custom-deep-browm">
@@ -183,7 +183,7 @@ function CartItem() {
           <hr className="border-b-1 border-custom-deep-browm my-5" />
 
           {/* nike white shirt */}
-          <div className="flex pt-6 lg:pt-10 lg:gap-x-7 gap-x-5">
+          <div className="flex pt-6 lg:pt-1 lg:gap-x-7 gap-x-5">
             <div className="bg-white border border-custom-deep-browm rounded-xl h-[145px] md:h-full lg:w-[250px]">
               <img
                 src="img/men/white-shirt.png"
@@ -221,7 +221,7 @@ function CartItem() {
                 </div>
                 {/* Mobile */}
                 <div className="lg:hidden">
-                  <p className="text-[17px] font-[900] text-custom-deep-browm ">
+                  <p className="text-[17px] font-bold text-custom-deep-browm ">
                     ₦78,000
                   </p>
                   <p className="text-[12px] font-[450] text-custom-deep-browm">
@@ -262,7 +262,7 @@ function CartItem() {
           {/* border */}
           <hr className="border-b-1 border-custom-deep-browm my-5 hidden lg:block" />
 
-          <div className="lg:flex pt-4 gap-x-7 hidden">
+          <div className="lg:flex pt-4 lg:pt-1 gap-x-7 hidden">
             <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
               <img
                 src="img/women/black-shirt.png"
@@ -329,7 +329,7 @@ function CartItem() {
         <img
           src="img/cart-2.png"
           alt="cart image"
-          className="w-full object-contain"
+          className="w-full object-contain mt-9"
         />
       </div>
     </section>

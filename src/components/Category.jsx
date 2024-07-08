@@ -131,7 +131,7 @@ function Category() {
     setIsOpen(!isOpen);
   }
   return (
-    <section className="mt-10">
+    <section className="w-11/12 mt-10 mx-auto">
       <div className="relative">
         <div
           className="bg-custom-wheat w-44 p-3 text-center shadow font-normal cursor-pointer text-custom-deep-browm"
