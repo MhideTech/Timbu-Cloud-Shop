@@ -1,20 +1,32 @@
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import TrustedSeller from "../components/TrustedSeller";
+import FooterBanner from "../components/FooterBanner";
+
 function Cart() {
-  return <div>
-    <Addeditem />
-  </div>;
+  return (
+    <div>
+      <Navbar />
+      <NewCart />
+      <TrustedSeller />
+      <FooterBanner />
+      <Footer />
+    </div>
+  );
 }
 
 // for Checkout
 function Addeditem() {
   return (
-    <section className="h-[600px] flex justify-between w-full">
-      <div className="w-[70%] bg-custom-wheat h-full rounded-xl p-12">
-        <div className="flex justify-between">
-          <div className="bg-white border-custom-brown border-2 rounded-xl p-2">
-            <img src="img/yellow-shirt 1.png" alt="" />
+    <section className="w-11/12 mx-auto h-fit flex flex-wrap justify-between">
+      <div className="sm:w-[70%] bg-custom-wheat h-full rounded-xl sm:p-12 py-12 px-6">
+        <div className="flex flex-wrap justify-between">
+          <div className="sm:w-[35%] mx-auto w-auto flex justify-center items-center bg-white border-custom-brown border-2 rounded-xl p-2">
+            <img src="img/men/yellow-shirt.png" alt="" />
           </div>
-          <div>
-            <h4 className="font-[900] text-4xl text-custom-deep-browm">
+           <div className="sm:w-[62%] mt-8 sm:mt-0">
+            <h4 className="font-bold text-3xl text-custom-deep-browm">
               Lacoste gold yellow shirt
             </h4>
             <div className="flex justify-between items-center mt-2">
@@ -31,21 +43,21 @@ function Addeditem() {
             </div>
 
             <div className="flex justify-between items-center my-5">
-              <h2 className="font-[900] text-4xl text-custom-deep-browm">
+              <h2 className="font-bold text-xl sm:text-4xl text-custom-deep-browm">
                 ₦35,000
               </h2>
               <p className="text-xl line-through text-custom-deep-browm">
                 ₦40,000
               </p>
             </div>
-            <p className="text-sm text-custom-deep-browm">In stock</p>
-            <p className="text-sm text-custom-deep-browm">
-              + shipping from ₦ 250 to ISOLO
+            <p className="text-md text-custom-deep-browm">In stock</p>
+            <p className="text-md text-custom-deep-browm">
+              + shipping from ₦250 to ISOLO
             </p>
             <button className="w-full bg-custom-deep-browm p-4 font-[450] text-custom-wheat text-xl rounded-md my-4">
               Buy now
             </button>
-            <button className="w-full p-4 font-[450] text-custom-deep-browm border border-custom-deep-browm text-xl rounded-sm">
+            <button className="w-full p-4 font-[450] text-custom-deep-browm border border-custom-deep-browm text-xl rounded-md">
               Add to cart
             </button>
           </div>
@@ -62,31 +74,29 @@ function Addeditem() {
           </p>
         </div>
       </div>
-      <div className="w-[28%]">
+      <div className="w-[28%] hidden sm:block">
         <img
-          src="img/cart-lmage.png"
+          src="img/cart-image.png"
           alt="cart image"
           className="w-full h-full"
-        />{" "}
+        />
       </div>
     </section>
   );
 }
 
 //Cart
-function newCart(){
+function NewCart() {
   return (
-    <section className="h-fit mt-16 flex justify-between">
+    <section className="w-11/12 mx-auto h-fit mt-16 flex justify-between">
       <div className="bg-custom-wheat p-10 w-[68%] rounded-lg">
-        <h3 className="font-[900] text-2xl text-custom-deep-browm">Cart</h3>
+        <h3 className="font-bold text-4xl text-custom-deep-browm">Cart</h3>
 
-        {/* Cart item will be here */}
         <section className="flex flex-col gap-y-3">
-          {/* nike blue shirt here */}
           <div className="flex pt-10 gap-x-7">
             <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
               <img
-                src="img/T-Shirt.png"
+                src="img/women/turquoise-shirt.png"
                 alt="T-Shirt"
                 className="h-full object-contain"
               />
@@ -97,7 +107,7 @@ function newCart(){
                 <h3 className="font-[450] text-2xl">
                   Nike turquoise plain shirt
                 </h3>
-                <p className="font-[900]">₦80,000</p>
+                <p className="font-bold">₦80,000</p>
               </div>
 
               <div className="flex justify-between items-center font-[450] text-sm text-custom-deep-browm w-full">
@@ -125,7 +135,7 @@ function newCart(){
 
               <div className="flex justify-between">
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
-                  <img src="delete.svg" alt="delete icon" />
+                  <img src="img/delete.png" alt="delete icon" />
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm">
@@ -135,14 +145,13 @@ function newCart(){
             </div>
           </div>
 
-          {/* border */}
           <hr className="border-b-1 border-custom-deep-browm my-5" />
 
           {/* lacoste gold shirt */}
           <div className="flex pt-4 gap-x-7">
             <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
               <img
-                src="img/yellow-shirt 1.png"
+                src="img/men/yellow-shirt.png"
                 alt="lacoste shirt"
                 className="h-full object-contain"
               />
@@ -181,7 +190,7 @@ function newCart(){
 
               <div className="flex justify-between">
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
-                  <img src="delete.svg" alt="delete icon" />
+                  <img src="img/delete.png" alt="delete icon" />
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm">
@@ -198,7 +207,7 @@ function newCart(){
           <div className="flex pt-4 gap-x-7">
             <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
               <img
-                src="img/white-men.png"
+                src="img/men/white-shirt.png"
                 alt="lacoste shirt"
                 className="h-full object-contain"
               />
@@ -206,9 +215,7 @@ function newCart(){
 
             <div className="flex flex-col gap-y-8 w-full">
               <div className="text-custom-deep-browm flex justify-between items-center w-full">
-                <h3 className="font-[450] text-2xl">
-                  Nike turquoise plain shirt
-                </h3>
+                <h3 className="font-[450] text-2xl">Nike white plain shirt</h3>
                 <p className="font-[900]">₦58,000</p>
               </div>
 
@@ -237,7 +244,7 @@ function newCart(){
 
               <div className="flex justify-between">
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
-                  <img src="delete.svg" alt="delete icon" />
+                  <img src="img/delete.png" alt="delete icon" />
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm">
@@ -253,7 +260,7 @@ function newCart(){
           <div className="flex pt-4 gap-x-7">
             <div className="bg-white border border-custom-deep-browm rounded-xl w-[250px]">
               <img
-                src="img/white-men.png"
+                src="img/women/red-shirt.png"
                 alt="lacoste shirt"
                 className="h-full object-contain"
               />
@@ -261,9 +268,7 @@ function newCart(){
 
             <div className="flex flex-col gap-y-8 w-full">
               <div className="text-custom-deep-browm flex justify-between items-center w-full">
-                <h3 className="font-[450] text-2xl">
-                  Nike turquoise plain shirt
-                </h3>
+                <h3 className="font-[450] text-2xl">Lacoste hot red shirt</h3>
                 <p className="font-[900]">₦58,000</p>
               </div>
 
@@ -292,7 +297,7 @@ function newCart(){
 
               <div className="flex justify-between">
                 <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4">
-                  <img src="delete.svg" alt="delete icon" />
+                  <img src="img/delete.png" alt="delete icon" />
                   Remove
                 </button>
                 <button className="w-[48%] bg-custom-deep-browm text-custom-wheat rounded-sm">
@@ -315,12 +320,12 @@ function newCart(){
 
       <div className="w-[30%] flex flex-col gap-y-4 h-fit">
         <img
-          src="img/cart-lmage.png"
+          src="img/cart-1.png"
           alt="cart image"
           className="w-full object-contain"
         />
         <img
-          src="img/cartimg-2.png"
+          src="img/cart-2.png"
           alt="cart image"
           className="w-full object-contain"
         />

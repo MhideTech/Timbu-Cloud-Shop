@@ -8,7 +8,7 @@ function Navbar() {
     setIsOpen(!isOpen);
   }
   return (
-    <nav className="flex justify-between items-center h-20">
+    <nav className="w-11/12 sticky top-0 bg-custom-white z-20 mx-auto flex justify-between items-center h-20 mb-9">
       <div className="flex items-center gap-5">
         <i
           className="fa-solid fa-bars text-xl block md:hidden text-custom-brown"
@@ -19,15 +19,15 @@ function Navbar() {
         </Link>
       </div>
       <ul className="flex md:gap-16 text-custom-brown">
-        <Link to="/women">
-          <li className="hidden md:block">Women</li>
-        </Link>
-        <Link to="/men">
-          <li className="hidden md:block">Men</li>
-        </Link>
-        <Link to="/newarrival">
-          <li className="hidden md:block">New Arrival</li>
-        </Link>
+        <li className="hidden md:block">
+          <Link to="/women">Women</Link>
+        </li>
+        <li className="hidden md:block">
+          <Link to="/men">Men</Link>
+        </li>
+        <li className="hidden md:block">
+          <Link to="/new-arrival">New Arrival</Link>
+        </li>
         <li>
           <Link to="/cart">
             <i className="fa-solid fa-cart-shopping"></i> Cart
@@ -47,15 +47,14 @@ function Navbar() {
           <nav className="fixed top-0 left-0 bg-custom-wheat z-30 w-[229px] py-7 ps-6 pe-3">
             <div className="mb-5 flex justify-between items-center">
               <Link to="/">
-                <img src="img/nav-logo.png" alt="logo" />
+                <img src="img/nav-logo.png" alt="logo" className="w-28" />
               </Link>
               <i
-                className="fa-solid fa-xmark cursor-pointer w-[10px] h-[10px]"
+                className="fa-solid fa-xmark cursor-pointer text-xl"
                 onClick={handleIsopen}
               ></i>
             </div>
-            <ul className="flex flex-col gap-9 font-[500] text-custom-deep-browm">
-              <li>All</li>
+            <ul className="flex flex-col mt-9 gap-9 font-[500] text-custom-deep-browm">
               <li>
                 <Link to="/men">Men</Link>
               </li>
@@ -63,7 +62,7 @@ function Navbar() {
                 <Link to="/women">Women</Link>
               </li>
               <li>
-                <Link to="/newarrival">New Arrivals</Link>
+                <Link to="/new-arrival">New Arrivals</Link>
               </li>
               <li>
                 <Link to="/cart">Cart</Link>

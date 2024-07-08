@@ -39,8 +39,8 @@ function App() {
       <Routes>
         <Route index element={<Homepage isLoading={isLoading} />} />
         <Route path="men" element={<Menwears clothesData={clothesData} />} />
-        <Route path="new-arrival" element={<NewArrival />} />
-        <Route path="women" element={<Women />} />
+        <Route path="new-arrival" element={<NewArrival clothesData={clothesData} />} />
+        <Route path="women" element={<Women clothesData={clothesData} />} />
         <Route path="cart" element={<Cart />} />
         <Route path="caro" element={<Carousel />} />
       </Routes>
