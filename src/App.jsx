@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Homepage from "./pages/Homepage";
@@ -370,9 +371,25 @@ const clothes = [
   },
 ];
 
+const API_KEY = `b0e2ee82fed14073b1ec87633b08479020240713163823126478`;
+const API_ID = `AVTYJMPT1GLMT0E`;
+const ORGANIZATION_ID = `8a10360c1143403fba23e194e39c12bd`;
+
 function App() {
   const [clothesData] = useState(clothes);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(function () {
+    async function getProducts() {
+      const res = await fetch(
+        `/api/products?organization_id=${ORGANIZATION_ID}&Appid=${API_ID}&Apikey=${API_KEY}`
+      );
+      const data = await res.json();
+      console.log(data);
+    }
+
+    getProducts();
+  }, []);
 
   useEffect(function () {
     const timer = setTimeout(() => {

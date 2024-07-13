@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import React from "react";
 import ClothCard from "../components/ClothCard";
 import FilterIconsContainer from "../components/FilterIconsContainer";
 import Footer from "../components/Footer";

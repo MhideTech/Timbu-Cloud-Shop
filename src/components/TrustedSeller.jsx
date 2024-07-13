@@ -1,3 +1,5 @@
+import React from "react";
+
 function TrustedSeller() {
   return (
     <section className="w-11/12 mx-auto px-5 my-9 md:px-24 py-6 bg-custom-white rounded-lg">

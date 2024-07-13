@@ -1,3 +1,5 @@
+import React from "react";
+
 function Header() {
   return (
     <header className="w-11/12 mx-auto h-[320px] md:h-[542px]  bg-[url('/img/Hero.png')] bg-no-repeat bg-cover  rounded-[10px] flex flex-col justify-between items-center relative">

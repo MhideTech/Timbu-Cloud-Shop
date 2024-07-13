@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import React from "react";
 
 const cards = [
   <div className="bg-red-300 h-64">Card 1</div>,
