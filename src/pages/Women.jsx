@@ -7,7 +7,9 @@ import Footer from "../components/Footer";
 import FooterBanner from "../components/FooterBanner";
 
 function Women({ clothesData }) {
-  const womenClothes = clothesData.filter((cloth) => cloth.category === "Women");
+  const womenClothes = clothesData.filter(
+    (cloth) => cloth.description === "women"
+  );
 
   return (
     <div>

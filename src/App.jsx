@@ -376,7 +376,7 @@ const API_ID = `AVTYJMPT1GLMT0E`;
 const ORGANIZATION_ID = `8a10360c1143403fba23e194e39c12bd`;
 
 function App() {
-  const [clothesData] = useState(clothes);
+  const [clothesData, setClothesData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(function () {
@@ -385,6 +385,7 @@ function App() {
         `/api/products?organization_id=${ORGANIZATION_ID}&Appid=${API_ID}&Apikey=${API_KEY}`
       );
       const data = await res.json();
+      setClothesData(data.items)
       console.log(data);
     }
 
