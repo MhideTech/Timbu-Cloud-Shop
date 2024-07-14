@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { toast, ToastContainer } from "react-toastify";
 
 function ClothCard({ cloth }) {
   const { addToCart } = useContext(CartContext);

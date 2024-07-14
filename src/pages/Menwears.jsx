@@ -17,7 +17,9 @@ function Menwears({ clothesData }) {
 }
 
 function Mensection({ clothesData }) {
-  const menClothes = clothesData.filter((cloth) => cloth.category === "Men");
+  const menClothes = clothesData.filter(
+    (cloth) => cloth.description === "men"
+  );
 
   return (
     <div className="mx-auto">

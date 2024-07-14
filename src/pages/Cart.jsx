@@ -26,15 +26,21 @@ function CartItem() {
     <section className="w-11/12 mx-auto h-fit mt-10 md:mt-16 flex justify-between">
       <div className="bg-custom-wheat p-3 lg:p-10 lg:w-[68%] rounded-lg w-full">
         <h3 className="font-bold text-3xl text-custom-deep-browm">Cart</h3>
+        {cart.length === 0 && (
+          <p className="text-3xl text-center my-10 font-bold">No Item in Cart</p>
+        )}
 
         <section className="flex flex-col gap-y-3">
           {cart.map((cloth, i) => (
             <CartCard key={i} cloth={cloth} />
           ))}
 
-          <button className="font-[450] text-xl text-custom-wheat bg-custom-deep-browm py-3 rounded-md text-center mt-5 ">
-            Checkout (<span className="font-[700]">₦</span>264,000)
-          </button>
+          {cart.length >= 1 && (
+            <button className="font-[450] text-xl text-custom-wheat bg-custom-deep-browm py-3 rounded-md text-center mt-5 ">
+              {console.log(cart)}
+              Checkout
+            </button>
+          )}
         </section>
       </div>
 

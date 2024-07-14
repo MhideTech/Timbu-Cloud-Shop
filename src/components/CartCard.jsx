@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext";
 
 function CartCard({ cloth }) {
   const [noOfItem, setNoOfItems] = useState(1);
-  const { cart } = useContext(CartContext);
+  const { cart, removeFromCart } = useContext(CartContext);
 
   function getFullImage(url) {
     const baseUrl = "https://api.timbu.cloud/images/";
@@ -18,10 +18,6 @@ function CartCard({ cloth }) {
   function handleRemoveProduct() {
     if (noOfItem == 1) return;
     setNoOfItems((no) => (no -= 1));
-  }
-
-  function removeItem(id) {
-    return cart.filter(cloth.unique_id !== id);
   }
 
   return (
@@ -109,7 +105,10 @@ function CartCard({ cloth }) {
           {/*End of Mobile */}
 
           <div className="flex justify-between">
-            <button className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4 text-[14px]" onClick={() => removeItem(cloth.unique_id)}>
+            <button
+              className="w-[49%] border-custom-deep-browm border py-2 text-custom-deep-browm font-[450] flex justify-center items-center gap-x-4 text-[14px]"
+              onClick={() => removeFromCart(cloth.unique_id)}
+            >
               <img src="img/delete.png" alt="delete icon" className="w-3" />
               Remove
             </button>
