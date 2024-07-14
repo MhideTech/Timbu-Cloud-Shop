@@ -163,7 +163,7 @@ function Category() {
             <h2 className="md:text-2xl text-[12px] font-[900] text-custom-deep-browm">
               New Arrivals
             </h2>
-            <Link to={"/newarrival"}>
+            <Link to={"/new-arrival"}>
               <span className="text-[8px] md:text-sm font-bold flex items-center gap-3">
                 {" "}
                 See All{" "}

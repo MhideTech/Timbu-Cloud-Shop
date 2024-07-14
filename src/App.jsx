@@ -403,7 +403,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Homepage isLoading={isLoading} />} />
+        <Route index element={<Homepage isLoading={isLoading} clothesData={clothesData} />} />
         <Route path="men" element={<Menwears clothesData={clothesData} />} />
         <Route
           path="new-arrival"

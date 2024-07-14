@@ -27,7 +27,7 @@ function CartItem() {
       <div className="bg-custom-wheat p-3 lg:p-10 lg:w-[68%] rounded-lg w-full">
         <h3 className="font-bold text-3xl text-custom-deep-browm">Cart</h3>
         {cart.length === 0 && (
-          <p className="text-3xl text-center my-10 font-bold">No Item in Cart</p>
+          <p className="text-2xl text-center my-10 font-bold text-custom-deep-browm">No Item in Cart</p>
         )}
 
         <section className="flex flex-col gap-y-3">

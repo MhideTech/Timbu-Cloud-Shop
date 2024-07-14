@@ -7,7 +7,7 @@ import FooterBanner from "../components/FooterBanner";
 import Header from "../components/Header";
 import Loader from "../components/Loader";
 
-function Homepage({ isLoading }) {
+function Homepage({ isLoading, clothesData }) {
   if (isLoading) {
     return <Loader />;
   }
@@ -16,7 +16,7 @@ function Homepage({ isLoading }) {
     <div className="mx-auto">
       <Navbar />
       <Header />
-      <Category />
+      <Category clothesData={clothesData} />
       <FooterBanner />
       <Footer />
     </div>
